@@ -18,6 +18,7 @@ public class Calculator {
         for (int i = 1; i < col.size(); i++) {
             if (oper == '*') result *= col.get(i);
             else if (oper == '+') result += col.get(i);
+            // else if (oper == '/' || oper == '-')...
         }
         return result;
     }
