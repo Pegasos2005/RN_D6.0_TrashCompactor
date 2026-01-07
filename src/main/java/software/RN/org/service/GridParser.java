@@ -16,7 +16,7 @@ public class GridParser {
         List<String> linesFile = Reader.readAsGrid(path);
 
         // Se crea la lista con los operadores ['*', '*', '+', ...]
-        String lastLine = linesFile.get(linesFile.size() - 1);
+        String lastLine = linesFile.getLast();
         List<Character> operators = filterOperations(lastLine);
 
         // Se crea la lista con números vacía [[], [], [], [], ...]
